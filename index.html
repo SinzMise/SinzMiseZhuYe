@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" href="./css/FiraCode.css">
     <link rel="stylesheet" type="text/css" href="./css/nutssss.css">
     <link rel="icon" href="https://cravatar.cn/avatar/4193da6ee225ac3a05b7adddff9d9ce2&s=1000">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@3.0/dist/browser/styles/disqusjs.css">
     <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css"/>
     <link rel="stylesheet" href="./mdui/css/mdui.min.css">
@@ -167,12 +166,9 @@
                         onclick="btn1()">Waline</a>
                         <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-pink mdui-text-capitalize"
                         onclick="btn2()">Twikoo</a>
-                        <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-pink mdui-text-capitalize"
-                        onclick="btn3()">DisqusJS</a>
                     </center>
                     <div id="waline"></div>
                     <div id="twikoo"></div>
-                    <div id="disqusjs"></div>
                     <script type="module">
                         import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
                     
@@ -207,38 +203,15 @@
                       // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
                     })
                     </script>
-                    <script src="https://cdn.jsdelivr.net/npm/disqusjs/dist/browser/disqusjs.es2015.umd.min.js"></script>
-                    <script>
-                        const disqusjs = new DisqusJS({
-                            shortname: 'sinzmise-zhuye',
-                            siteName: 'SinzMise的个人主页',
-                            identifier: "www.sinzmise.top",
-                            url: "www.sinzmise.top",
-                            api: 'https://disqus.api.sinzmise.ga/api/',
-                            apikey: '4BphlvzPfiaxrP6HJToibbotJSnPcwSmAARg593Wa5S3eCTETumUI1PGC8vjKv4W',
-                            nocomment: '这里冷冷清清的，一条评论都没有',
-                            admin: 'SinzMise',
-                            adminLabel: '弦'
-                        });
-                        disqusjs.render(document.getElementById('disqusjs'));
-                    </script>
                         <script>
                             function btn1() {
                                 document.getElementById('waline').style.display = 'block';
-                                document.getElementById('disqusjs').style.display = 'none';
                                 document.getElementById('twikoo').style.display = 'none';
                             }
                      
                             function btn2() {
                                 document.getElementById('waline').style.display = 'none';
-                                document.getElementById('disqusjs').style.display = 'none';
                                 document.getElementById('twikoo').style.display = 'block';
-                            }
-
-                            function btn3() {
-                                document.getElementById('waline').style.display = 'none';
-                                document.getElementById('disqusjs').style.display = 'block';
-                                document.getElementById('twikoo').style.display = 'none';
                             }
                         </script>
 
@@ -247,10 +220,6 @@
             /* 这个display：none一定要写上;不然一开始就会显示twikoo */
             display: none;
             margin: 0px 7px 0px 0px;
-        }
-        #disqusjs {
-            /* 这个display：none一定要写上;不然一开始就会显示disqusjs */
-            display: none;
         }
 </style>
                 </div>
