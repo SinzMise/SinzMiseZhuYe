@@ -281,11 +281,27 @@ body {
     color: white;
     float: left;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    margin-bottom: 30px;
-    /* background-color: blue; */
-}
+    border-radius: 10px;
+    /* 背景渐变色 - 原理2 */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    /* 背景尺寸 - 原理3 */
+    background-size: 600% 600%;
+    /* 循环动画 - 原理4 */
+    animation: gradientBG 5s ease infinite;
+  }
+
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
 
 #footer a {
     text-decoration: none;
