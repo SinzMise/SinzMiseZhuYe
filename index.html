@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SinzMise的个人主页</title>
+    <meta name="description"
+        content="陇上正飞雪，肠断弦亦绝">
+    <meta name="keywords" content="SinzMise的个人主页,SinzMise,弦·SinzMise,个人主页">
+    <link rel="stylesheet" type="text/css" href="./css/FiraCode.css">
+    <link rel="stylesheet" type="text/css" href="./css/nutssss.css">
+    <link rel="icon" href="https://cravatar.cn/avatar/4193da6ee225ac3a05b7adddff9d9ce2&s=1000">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@3.0/dist/browser/styles/disqusjs.css">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css"/>
+    <link rel="stylesheet" href="./mdui/css/mdui.min.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./live2d/css/live2d.css" />
+    <script src="./status/visit-stat.min.js"></script>
+</head>
+
+<body>
+    <div id="box">
+        <!-- 个人资料卡片 -->
+        <div class="meBox">
+            <!-- 头像 -->
+            <div class="headPhoto"></div>
+            <!-- 介绍 -->
+            <div class="meBox-title">
+                <p>弦·SinzMise</p>
+                <div class="fg"></div>
+            </div>
+            <div class="meBox-text">
+                <p>陇上正飞雪，肠断弦亦绝</p>
+                <br>
+                <h2>社交链接</h2>
+                <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-pink mdui-text-capitalize"
+                       href="https://space.bilibili.com/479627766" target="_blank" style="margin: 5px 0px;"><i class="fa-brands fa-bilibili"></i> Bilibili</a>
+
+                    <a style="margin: 5px 0px;" class="mdui-btn mdui-btn-raised rin-btn rin-btn-black mdui-text-capitalize" href="https://github.com/SinzMise" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+
+                    <a style="margin: 5px 0px;" class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue mdui-text-capitalize"
+                       href="mailto:mail@sinzmise.cf" target="_blank"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <p>访问量：<span id="vs_site_pv">0</span>人次</p>
+            </div>
+            <!-- 两个按钮 -->
+            <div class="meBox-Button">
+                <a href="https://blog.sinzmise.top/">博客</a>
+                <a href="https://diary.sinzmise.top/">日记</a>
+            </div>
+        </div>
+
+        <!-- 伪Winindows页面介绍 -->
+        <div id="cmdBox">
+            <!-- 第一个页面 -->
+            <div class="cmd">
+                <!-- 三个按钮 -->
+                <div class="click">
+                    <div class="min"><img src="./img/min.png"></div>
+                    <div class="max"><img src="./img/max.png"></div>
+                    <div class="close"><img src="./img/close.png"></div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="title">
+                    <span><i class="fa-solid fa-music" style="width: 20px;margin: 9% 0;"></i>音乐</span>
+                </div>
+                <!-- 页面内容 -->
+                <div class="cmdText">
+                    <h2 style="text-align: center;">安静地欣赏音乐吧~~</h2>
+                    <link href="https://unpkg.com/aplayer/dist/APlayer.min.css" rel="stylesheet">
+                    <script src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script>
+                    <script src="https://unpkg.com/meting/dist/Meting.min.js"></script>
+                    <script>var meting_api='https://meting.sinzmise.tk/api/?server=:server&type=:type&id=:id&auth=:auth&r=:r';</script>
+                    <meting-js
+                         server="netease"
+                         type="playlist"
+                         id="8253386665">
+                    </meting-js>
+                </div>
+            </div>
+            <!-- 第二个页面 -->
+            <div class="cmd cmd2">
+                <!-- 三个按钮 -->
+                <div class="click">
+                    <div class="min"><img src="./img/min.png"></div>
+                    <div class="max"><img src="./img/max.png"></div>
+                    <div class="close"><img src="./img/close.png"></div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="title">
+                    <span><i class="fa-solid fa-bars" style="width: 20px;margin: 9% 0;"></i>杂项</span>
+                </div>
+                <!-- 页面内容 -->
+                <div class="cmdText">
+                    <h2 style="text-align: center;">属性</h2>
+                    <div class="project">
+                        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                        mdui-tooltip="{content: '<del>大多都是看教程（误）</del>'}">
+
+                       <div class="rin-progress-title">
+                           HTML/CSS
+                       </div>
+
+                       <div class="mdui-progress">
+                           <div class="mdui-progress-determinate" style="width: 30%;"></div>
+                       </div>
+
+                   </div>
+
+                   <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                        mdui-tooltip="{content: '到现在<del>只会做Typecho主题</del>'}">
+                       <div class="rin-progress-title">
+                           PHP
+                       </div>
+                       <div class="mdui-progress">
+                           <div class="mdui-progress-determinate" style="width: 30%;"></div>
+                       </div>
+                   </div>
+
+                   <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                        mdui-tooltip="{content: '<del>都是看教程学来的</del>'}">
+                       <div class="rin-progress-title">
+                           JavaScript
+                       </div>
+                       <div class="mdui-progress">
+                           <div class="mdui-progress-determinate" style="width: 10%;"></div>
+                       </div>
+                   </div>
+                    </div>
+                    <div class="project">
+                        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                        mdui-tooltip="{content: '我开头不是跟你说了吗。。。。'}">
+                       <div class="rin-progress-title">
+                           社交
+                       </div>
+                       <div class="mdui-progress">
+                           <div class="mdui-progress-determinate" style="width: 50%;"></div>
+                       </div>
+                   </div>
+
+                   <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                        mdui-tooltip="{content: '除了搞项目之外我还真就没有一点耐心'}">
+                       <div class="rin-progress-title">
+                           耐心
+                       </div>
+                       <div class="mdui-progress">
+                           <div class="mdui-progress-determinate" style="width: 30%;"></div>
+                       </div>
+                   </div>
+
+                   <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                        mdui-tooltip="{content: '几乎对未来没有太大希望'}">
+                       <div class="rin-progress-title">
+                           世界
+                       </div>
+                       <div class="mdui-progress">
+                           <div class="mdui-progress-determinate" style="width: 2%;"></div>
+                       </div>
+                   </div>
+                </div>
+                   <h2 style="text-align: center;margin: 22% 0px 1% 0;">评论</h2>
+                   <div class="project">
+                    <center>
+                        <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue mdui-text-capitalize"
+                        onclick="btn1()">Waline</a>
+                        <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-pink mdui-text-capitalize"
+                        onclick="btn2()">Twikoo</a>
+                        <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-pink mdui-text-capitalize"
+                        onclick="btn3()">DisqusJS</a>
+                    </center>
+                    <div id="waline"></div>
+                    <div id="twikoo"></div>
+                    <div id="disqusjs"></div>
+                    <script type="module">
+                        import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+                    
+                        init({
+                          el: '#waline',
+                          serverURL: 'https://wle.pl.sinzmise.ga',
+                          login: 'force',
+                          path:'/comments/',
+    emoji: [
+      "https://unpkg.com/@waline/emojis@1.0.1/weibo",
+      "https://emoji.shojo.cn/bili/src/小黄脸",
+      "https://unpkg.com/@waline/emojis@1.0.1/bilibili",
+      "https://emoji.shojo.cn/bili/src/枕边童话",
+      "https://emoji.shojo.cn/bili/src/咩栗",
+      "https://emoji.shojo.cn/bili/src/呜米",
+      "https://emoji.shojo.cn/bili/src/进击的冰糖",
+      "https://emoji.shojo.cn/bili/src/冰糖IO 蜕变·闪耀",
+      "https://emoji.shojo.cn/bili/src/多多poi",
+      "https://emoji.shojo.cn/bili/src/穆小泠",
+      "https://emoji.shojo.cn/bili/src/早稻叽"
+      ],
+    recaptchaV3Key: '6LdaaPgjAAAAAJlZJFh-BCm9whbna0p6DOl_r-kO'
+                        });
+                    </script>
+                    <script src="https://cdn.staticfile.org/twikoo/1.6.11/twikoo.all.min.js"></script>
+                    <script>
+                    twikoo.init({
+                      envId: 'https://twk.pl.sinzmise.ga/', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+                      el: '#twikoo', // 容器元素
+                      // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+                      path: '/comments/', // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+                      // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+                    })
+                    </script>
+                    <script src="https://cdn.jsdelivr.net/npm/disqusjs/dist/browser/disqusjs.es2015.umd.min.js"></script>
+                    <script>
+                        const disqusjs = new DisqusJS({
+                            shortname: 'sinzmise-zhuye',
+                            siteName: 'SinzMise的个人主页',
+                            identifier: "https://www.sinzmise.top/",
+                            url: "https://www.sinzmise.top/",
+                            api: 'https://disqus.api.sinzmise.ga/api/',
+                            apikey: '4BphlvzPfiaxrP6HJToibbotJSnPcwSmAARg593Wa5S3eCTETumUI1PGC8vjKv4W',
+                            nocomment: '这里冷冷清清的，一条评论都没有',
+                            admin: 'SinzMise',
+                            adminLabel: '弦'
+                        });
+                        disqusjs.render(document.getElementById('disqusjs'));
+                    </script>
+                        <script>
+                            function btn1() {
+                                document.getElementById('waline').style.display = 'block';
+                                document.getElementById('disqusjs').style.display = 'none';
+                                document.getElementById('twikoo').style.display = 'none';
+                            }
+                     
+                            function btn2() {
+                                document.getElementById('waline').style.display = 'none';
+                                document.getElementById('disqusjs').style.display = 'none';
+                                document.getElementById('twikoo').style.display = 'block';
+                            }
+
+                            function btn3() {
+                                document.getElementById('waline').style.display = 'none';
+                                document.getElementById('disqusjs').style.display = 'block';
+                                document.getElementById('twikoo').style.display = 'none';
+                            }
+                        </script>
+
+    <style>
+        #twikoo {
+            /* 这个display：none一定要写上;不然一开始就会显示twikoo */
+            display: none;
+            margin: 0px 7px 0px 0px;
+        }
+        #disqusjs {
+            /* 这个display：none一定要写上;不然一开始就会显示disqusjs */
+            display: none;
+        }
+</style>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div id="footer">
+        <p>© 2023 SinzMise</p>
+        <p>基于<a href="https://n0ts.cn/nutssss1/">Nutssss的个人主页</a>魔改</p>
+    </div>
+
+    <!-- 引入mdui -->
+    <script src="./mdui/js/mdui.min.js"></script>
+
+    <!-- 看板娘开始 -->
+    <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+    var message_Path = './live2d/';//资源目录，如果目录不对请更改
+    var talkAPI = "https://api.ownthink.com/bot";//如果有类似图灵机器人的聊天接口请填写接口路径
+    var AppID = "b50754a168e1344997b47a843d034a31";//机器人AppID
+    </script>
+    <script type="text/javascript" src="live2d/js/live2d.js"></script>
+    <script type="text/javascript" src="live2d/js/message.js"></script>
+    <div id="landlord" style="left:5px;bottom:0px;">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="250" height="280" class="live2d"></canvas>
+        <!--添加聊天窗口-->
+        <div class="live_talk_input_body">
+            <div class="live_talk_input_name_body">
+                <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off" placeholder="你的名字" />
+            </div>
+            <div class="live_talk_input_text_body">
+                <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off" placeholder="要和我聊什么呀？"/>
+                <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
+            </div>
+        </div>
+        <!--主体部分-->
+        <input name="live_talk" id="live_talk" value="1" type="hidden" />
+        <div class="live_ico_box">
+            <div class="live_ico_item type_info" id="showInfoBtn"></div>
+            <div class="live_ico_item type_talk" id="showTalkBtn"></div>
+            <div class="live_ico_item type_youdu" id="youduButton"></div>
+            <div class="live_ico_item type_quit" id="hideButton"></div>
+            <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
+            <input id="duType" value="douqilai,l2d_caihong" type="hidden">
+        </div>
+    </div>
+    <div id="open_live2d">召唤伊斯特瓦尔</div>
+<!-- 看板娘结束 -->
+</body>
+
+</html>

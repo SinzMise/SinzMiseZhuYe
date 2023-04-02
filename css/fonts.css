@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'font1';
+    font-display: swap;
+    src: url('https://raw.iqiq.io/SinzMise/MYPictures/master/fonts/1.ttf') format("truetype");
+  }
+
+@font-face {
+    font-family: 'font2';
+    font-display: swap;
+    src: url('https://raw.iqiq.io/SinzMise/MYPictures/master/fonts/2.ttf') format("truetype");
+  }
+h1,h2,h3,h4,h5,h6{
+    font-family: font1,'Microsoft YaHei',sans-serif;
+}
+* {
+  font-family: font2,'Microsoft YaHei',sans-serif;
+}
